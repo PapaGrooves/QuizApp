@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QuizApp</title>
+        <style>
+          @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+          @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+        </style>
+        <script
+          src="https://kit.fontawesome.com/133370dc7f.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="js/quiz.js" defer></script>
+        <link rel="stylesheet" href="css/quiz.css" />
+      </head>
+<body onload="h()">
+<div class="container">
+    <div class="sub-container">
+
+      <div class="heading">
+        <div></div>
+        <div class="heading-top">
+        <div class="welcome">
+          <p>Good luck&nbsp</p>
+          <p id="userName"></p>
+        </div>
+        <h1>HISTORY</h1>
+        <!-- <hr> -->
+        </div>
+        <div class="dateAndTime">
+          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+          <div id="dateDisplay" class="date" onload="showDate()"></div>
+        </div>
+        </div>
+
+      <div class="quiz-box">
+          <div id="quiz-data">
+            <label id="question" for=""> </label>
+          </div>
+          <div class="quiz-input">
+              <input type="text" id="answer" autocomplete="off">
+          </div>
+          <label for="" id="result"></label>
+      </div>
+
+      <div class="btn-wrapper">
+        <button onclick="historyQuiz()" class="button btn-center" id="submit">Submit</button>
+        <a  href="quiz-home.html"><div class="button btn-left btn-height" id="btn-flip" style="display: none;"> Home </div></a>
+        <a  href="statistics.html"><div class="button btn-right" id="btn-flip-two" style="display: none;"> Statistics </div></a>
+        </div>
+        </div>
+        </div>
+        </body>
+        </html>

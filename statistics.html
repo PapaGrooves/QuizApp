@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QuizApp</title>
+        <style>
+          @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+          @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+        </style>
+        <script
+          src="https://kit.fontawesome.com/133370dc7f.js"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="css/quiz.css" />
+      </head>
+<body onload="progress()">
+<div class="container">
+    <div class="sub-container">
+      <div class="heading">
+        <div></div>
+        <div class="heading-top mid-col">
+        <div class="welcome">
+          <p>Well done! Here are your scores&nbsp </p> <p id="userName"></p>
+        </div>
+        <h1>STATISTICS</h1>
+        <!-- <hr> -->
+        </div>
+        <div class="dateAndTime right-col">
+          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+          <div id="dateDisplay" class="date" onload="showDate()"></div>
+        </div>
+        </div>
+
+        <div class="progress">
+        <div class="myProgress">
+          <div class="myBar"id="mathBar"> MATHS</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar"id="historyBar">HISTORY</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar"id="chemBar">CHEMISTRY</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar"id="physicsBar">PHYSICS</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar"id="geoBar">GEOGRAPHY</div>
+        </div>
+        <div class="myProgress">
+          <div class="myBar"id="bioBar">BIOLOGY</div>
+        </div>
+      </div>
+        
+        
+      <div class="btn-wrapper">
+        <a  href="quiz-home.html"><div class="button btn-left"> Home </div></a>
+        
+        </div>
+        </div>
+        </div>
+        </body>
+        <script src="js/quiz.js"></script>
+        </html>

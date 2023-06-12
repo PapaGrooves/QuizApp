@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizApp</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/133370dc7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
+
+  <body onload="showTime(), showDate()">
+    <div>
+      <h1 id="login-title">LOG IN TO START</h1>
+    </div>
+
+    <div class="dateAndTime">
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+      <div id="dateDisplay" class="date" onload="showDate()"></div>
+    </div>
+
+    <div class="wrapper">
+      <div class="credentials">
+        <h4 class="label">Enter your name:</h4>
+        <input type="text" id="firstName" placeholder="Joe" />
+
+        <h4 class="label" name="email">Enter your email:</h4>
+        <input
+          type="email"
+          id="email"
+          placeholder="name@mail.com"
+          required
+        /><br /><br />
+
+        <div onclick="validation()" class="button">Log in</div>
+      </div>
+    </div>
+  </body>
+  <script src="js/quiz.js"></script>
+</html>

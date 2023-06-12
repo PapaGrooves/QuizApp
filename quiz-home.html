@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizApp</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/133370dc7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/quiz.js" defer></script>
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">
+
+        <div class="heading">
+        <div></div>
+        <div class="heading-top mid-col">
+        <div class="welcome">
+          <p>Welcome&nbsp </p> <p id="userName"></p>
+        </div>
+        <h1>SELECT QUIZ</h1>
+        </div>
+        <div class="dateAndTime right-col">
+          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+          <div id="dateDisplay" class="date" onload="showDate()"></div>
+        </div>
+        </div>
+
+        <div id="quizLinks">
+          <div class="quizButton mathQuiz" onclick="mathLink()">
+            <div id="0" class="linkButton">
+              <i class="fas fa-calculator"></i>
+              <h2 class="title">Maths</h2>
+            </div>
+          </div>
+
+          <div class="quizButton historyQuiz" onclick="historyLink()">
+            <div id="1" class="linkButton">
+              <i class="fas fa-book-open"></i>
+              <h2 class="title">History</h2>
+            </div>
+          </div>
+
+          <div class="quizButton chemistryQuiz" onclick="chemistryLink()">
+            <div id="2" class="linkButton">
+                <i class="fas fa-atom"></i>
+              <h2 class="title">Chemistry</h2>
+            </div>
+          </div>
+
+          <div class="quizButton physicsQuiz" onclick="physicsLink()">
+            <div id="3" class="linkButton">
+                <i class="fas fa-solid fa-lightbulb"></i>
+              <h2 class="title">Physics</h2>
+            </div>
+          </div>
+
+          <div class="quizButton geographyQuiz" onclick="geographyLink()">
+            <div id="4" class="linkButton">
+              <i class="fas fa-globe-americas"></i>
+              <h2 class="title">Geography</h2>
+            </div>
+          </div>
+
+          <div class="quizButton biologyQuiz" onclick="biologyLink()">
+            <div id="5" class="linkButton">
+                <i class="fas fa-dna"></i>
+              <h2 class="title">Biology</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-wrapper">
+          <a href="index.html" 
+            ><div onclick="clear()" class="button btn-left">Back to login</div></a
+          >
+          <a href="statistics.html"
+            ><div class="button btn-right">Statistics</div></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

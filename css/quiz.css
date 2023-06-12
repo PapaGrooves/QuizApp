@@ -1,0 +1,306 @@
+*,
+* ::after,
+* ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+img {
+    display: block;
+}
+
+:root {
+    --clock-back: rgb(29, 2, 2);
+    --background-gradient: #5a1212;
+    --window-color: rgba(114, 33, 33, 1);
+    --button-tile: rgba(56, 4, 4, 1);
+    --button: rgba(184, 80, 80, 1);
+    --button-hover: rgba(219, 97, 97, 1);
+}
+body {
+    background-color: var(--background-gradient);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Ultra', serif;
+    font-weight:300;
+}
+
+.dateAndTime {
+    /* background-color: var(--clock-back); */
+    border-radius: 50%;
+    max-width: 250px;
+    margin: 2em auto;
+}
+.clock {
+    font-size: 5em;
+}
+
+.date {
+    padding-bottom: 1em;
+}
+
+.wrapper {
+    background-color: rgb(54, 3, 3);
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 2.5em;
+    border-radius: 15px;
+    box-shadow: black 0px 2px 5px 0px;
+
+}
+
+.credentials {
+    margin: auto; 
+    padding-top: 2.1em;
+    max-width: 200px;
+}
+
+.welcome {
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+#login-title {
+    margin-top: 2em;
+}
+
+input {
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+}
+
+.label {
+    text-align: left;
+    margin: 0.5em auto;
+}
+
+.button {
+    border-radius: 5px;
+    border-style: none;
+    width: 125px;
+    padding: 15px;
+    margin: auto;
+    background-color: var(--button);
+    box-shadow: black 0px 2px 5px 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+}
+
+#quizLinks {
+    max-width: 650px;
+    margin: auto;
+    margin-top: 2.5em;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+}
+.quizButton {
+    background-color: var(--button-tile);
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    border-radius: 1em;
+    box-shadow: black 0px 2px 5px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.quizButton:hover {
+    width: 180px;
+    height: 180px;
+    box-shadow: black 0px 12px 25px 0px;
+    transition-timing-function: ease-out;
+}
+
+.mathQuiz:hover {
+    color: red;
+}
+.historyQuiz:hover {
+    color: yellow;
+}
+.chemistryQuiz:hover {
+    color: yellowgreen;
+}
+.physicsQuiz:hover {
+    color: skyblue;
+}
+.geographyQuiz:hover {
+    color:violet;
+}
+.biologyQuiz:hover {
+    color: purple;
+}
+
+#quiz-data {
+    background-color: rgb(58, 12, 12);
+    max-width: 450px;
+    margin: auto;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.quiz-box {
+    margin: auto 1em;
+    text-align: center;
+}
+
+
+.fas {
+    font-size: 5em;
+    margin: auto;
+}
+
+.linkButton {
+    padding-top: 3em;
+    transition: 0.5s;
+}
+
+.linkButton:hover {
+    padding-top: 1.9em;
+    transition-timing-function: ease-out;
+}
+
+.title {
+    padding-top: 0.75em;
+}
+
+#answer {
+    margin-top: 25px;
+    max-width:200px;
+}
+
+.btn-wrapper {
+    margin: auto;
+    padding-bottom: 2em;
+    max-width: 200px;
+}
+
+.btn-left {
+    margin: 25px auto;
+}
+
+.btn-center {
+    margin: auto;
+    margin-top: 25px;
+    color: white;
+}
+
+#submit {
+    cursor: pointer;
+}
+
+.progress {
+    text-align: center;
+}
+.myProgress {
+    width: 300px;
+    padding: 0.4em;
+    background-color: rgb(54, 48, 48);
+    margin: 1em auto;
+    border-radius: 5em;
+    text-align: center;
+  }
+  
+  .myBar {
+    width: 1%;
+    height: 20px;
+    border-radius: 5em;
+    color: black;
+    font-weight: bold;
+    transition: 2s;
+  }
+
+#mathBar {
+    background-color: red;
+}
+#historyBar {
+    background-color: yellow;
+}
+#chemBar {
+    background-color: yellowgreen;
+}
+#physicsBar {
+    background-color: skyblue;
+}
+#geoBar {
+    background-color: violet;
+}
+#bioBar {
+    background-color: purple;
+}
+
+@media screen and (min-width: 720px){
+
+   body {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   }
+   
+    .container {
+    display: table-cell;
+    vertical-align: middle;
+    
+    }
+    .sub-container {
+    margin: auto;
+    background-color: var(--window-color) ;
+    max-width: 1000px;
+    max-height: 850px;
+    border-radius: 50px;
+    }
+
+    .heading {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 30% 40% 30%;
+    }
+
+    .welcome {
+        padding-top: 0;
+    }
+    .heading-top {
+        margin: auto;
+    }
+
+    .clock {
+        font-size: 3em;
+    }
+    
+    .btn-wrapper {
+        height: 9.25em;
+    }
+
+    .btn-height {
+        margin-top: -5.5em;
+    }
+
+    #quizLinks {
+        margin-top: 0em;
+    }
+}
